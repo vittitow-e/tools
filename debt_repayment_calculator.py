@@ -29,5 +29,5 @@ if time_frame != 0:
     plan_amt = round(debt/time_frame,2) # divide debt by desired # of months, use round() function to shorten to the hundredths place
     print("To pay off your debt in", time_frame, "months, you will need to pay $", plan_amt, "each month.")
 else:
-    plan_time = round(debt/12) # divide debt by 12 for a monthly value, use round() function to shorten to the hundredths place
-    print("It will take ", plan_time, "months to pay off your debt.")
+    plan_time = round(debt/payment_amount) # divide debt by the user input value, use round() function to shorten to the hundredths place
+    print("It will take", plan_time, "months or", round((plan_time/12),1), "years to pay off your debt.")
